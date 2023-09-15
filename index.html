@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Choco Hills</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js" integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header>
+  <div class="navbar">
+    <div class="nav-logo">
+      <div class="logo">
+     </div>
+     </div>
+     <div class="nav-location">
+      <a href=""><i class="fa-solid fa-location-dot" style="color: #06204b;"></i></a>
+     </div>
+     <div class="contact-us">
+        <ul style="list-style-type: none;"><li><a href="#">Contact Us</a></li></ul>
+     </div>
+     <div class="product">
+      <ul style="list-style-type: none;"><li><a href="#">product</a></li></ul>
+     </div>
+     <div class="nav-search">
+      <input placeholder="Search chocolates" class="search-input">
+      <div class="search-icon">
+        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+      </div>
+     </div>
+     <div class="cart" >
+      <ul style="list-style-type: none;"><li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li></ul>
+     </div>
+  </div>
+ </header>
+<div class="box">
+ <h1 class="heading">
+  Indulge in chocolate bliss!
+ </h1>
+ <div class="container">
+ <div class="card" style="width: 18rem;">
+  <img src="https://drinkjimmys.com/cdn/shop/files/cs-01_7450887d-f3c7-4d44-b940-a57520e14cd7.png?v=1692181742&width=360" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Gin cherry Sour</h5>
+    <p class="card-price">₹859.00</p>
+    <a href="#" class="btn btn-primary" data-id="1" onclick="additem(event)">Add to Cart</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://drinkjimmys.com/cdn/shop/files/Updated_G-Pack_1_4d46c0e0-5404-4f81-9b2c-cfc8fb28fe18.jpg?v=1692186260&width=360" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Appreciation pack</h5>
+    <p class="card-price">₹2,456.00</p>
+    <a href="#" class="btn btn-primary" data-id="2" onclick="additem(event)">Add to Cart</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://drinkjimmys.com/cdn/shop/files/em-02_10a16250-00e2-4d32-950b-867da7a9f89a.jpg?v=1692184729&width=360" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Espresso Martini</h5>
+    <p class="card-price">₹999.00</p>
+    <a href="#" class="btn btn-primary" data-id="3" onclick="additem(event)">Add to Cart</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://drinkjimmys.com/cdn/shop/files/PI1_b33b5bf3-2f4e-479e-8ae1-688930170499.jpg?v=1692185351&width=360" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">old fashioned Espresso</h5>
+    <p class="card-text">₹9,599.00</p>
+    <a href="#" class="btn btn-primary" data-id="4" onclick="additem(event)">Add to Cart</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://drinkjimmys.com/cdn/shop/files/BarSpoon_Fork_83abd70d-6011-480f-950d-35c483dd49f7.jpg?v=1692186159&width=360" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Cosmopolitan Mocktail</h5>
+    <p class="card-price">₹959.00</p>
+    <a href="#" class="btn btn-primary" data-id="5" onclick="additem(event)">Add to Cart</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://drinkjimmys.com/cdn/shop/files/Jimmy_sCelebrationPack_1_7072f4b7-e1a8-49b5-b2b1-ff71cb403157.png?v=1692879562&width=360" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Celebration pack</h5>
+    <p class="card-price">₹999.00</p>
+    <a href="#" class="btn btn-primary" data-id="6" onclick="additem(event)">Add to Cart</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://drinkjimmys.com/cdn/shop/files/JimmyAssortedCocktailMixerPack-1.webp?v=1693481883" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Assorted Cocktail </h5>
+    <p class="card-price"> ₹799.00</p>
+    <a href="#" class="btn btn-primary" data-id="7" onclick="additem(event)">Add to Cart</a>
+  </div>
+</div>
+</div>
+</div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
